@@ -1,0 +1,66 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+h1 {
+    text-transform: capitalize;
+}
+// Additional Styles for Promotion and Dealer area
+
+.welcome-area {
+    padding: 15% 0;
+    text-align: center;
+}
+
+.list-group-item:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.list-group-item {
+     > p,
+    > a {
+        float: left;
+        font-size: 16px;
+        margin: .5em 0 0;
+    }
+
+    p.by-user {
+        clear: both;
+    }
+
+    a {
+        color: #00cc66;
+    }
+
+    a.btn {
+        float: right;
+        color: #fff;
+        background: #00cc66;
+        margin: 0 1em;
+        border: 0;
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+
+    > form {
+        float: right;
+
+        button.btn-primary {
+            background: #e60000;
+            border: 0 none;
+        }
+    }
+}
+
+p.goback {
+    text-align: right;
+    font-size: 16px;
+}
